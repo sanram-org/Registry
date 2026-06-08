@@ -1,0 +1,5 @@
+name = "mofeing"
+uuid = "a31bcd0b-b064-4847-8299-f34605c689d0"
+repo = "https://github.com/mofeing/Registry"
+
+[packages]
