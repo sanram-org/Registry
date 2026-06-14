@@ -4,3 +4,4 @@ repo = "https://github.com/sanram-org/Registry"
 
 [packages]
 21fe5c4b-a943-414d-bf3e-516f24900631 = { name = "Muscle", path = "M/Muscle" }
+d83dbd90-3e00-4b33-84f1-398adcf3b35e = { name = "DelegatorTraits", path = "D/DelegatorTraits" }
