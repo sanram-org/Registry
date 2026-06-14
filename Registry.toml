@@ -3,3 +3,4 @@ uuid = "a31bcd0b-b064-4847-8299-f34605c689d0"
 repo = "https://github.com/sanram-org/Registry"
 
 [packages]
+21fe5c4b-a943-414d-bf3e-516f24900631 = { name = "Muscle", path = "M/Muscle" }
