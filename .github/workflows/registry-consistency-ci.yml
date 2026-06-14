@@ -41,6 +41,7 @@ jobs:
     steps:
       - uses: actions/checkout@6
       - uses: julia-actions/setup-julia@3
+        with:
           version: ${{ matrix.version }}
           arch: ${{ matrix.arch }}
       - name: Cache artifacts and packages
