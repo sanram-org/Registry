@@ -22,8 +22,8 @@ jobs:
           - '1'
           - 'nightly'
     steps:
-      - uses: actions/checkout@6
-      - uses: julia-actions/setup-julia@3
+      - uses: actions/checkout@v6
+      - uses: julia-actions/setup-julia@v3
         with:
           version: ${{ matrix.version }}
           arch: x64
@@ -70,7 +70,7 @@ jobs:
     strategy:
       fail-fast: false
     steps:
-      - uses: actions/checkout@6
+      - uses: actions/checkout@v6
       - run: rm -rf /tmp/manifest_updater
       - run: mkdir /tmp/manifest_updater
       - run: chmod 700 /tmp/manifest_updater
@@ -83,7 +83,7 @@ jobs:
       - run: chmod 600 .ci/Project.toml
       - run: chmod 600 .ci/Manifest.*.toml
       - run: git status
-      - uses: peter-evans/create-pull-request@3
+      - uses: peter-evans/create-pull-request@v3
         with:
           token: ${{ secrets.TAGBOT_TOKEN }}
           delete-branch: true

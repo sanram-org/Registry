@@ -12,9 +12,9 @@ jobs:
     if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch' || github.event.pull_request.merged
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@6
+      - uses: actions/checkout@v6
       - name: Cache artifacts
-        uses: julia-actions/cache@3
+        uses: julia-actions/cache@v3
       - run: write(ENV["GITHUB_OUTPUT"], "manifest_version=$(VERSION.major).$(VERSION.minor)")
         shell: julia --color=yes --project=.ci/ {0}
         id: manifest_version
