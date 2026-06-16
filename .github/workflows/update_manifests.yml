@@ -58,7 +58,7 @@ jobs:
       - run: julia --color=yes --project=.ci/ -e 'import Pkg; Pkg.update()'
       - run: mv .ci/Manifest.toml .ci/Manifest.${{ steps.manifest_version.outputs.manifest_version }}.toml
       - run: git status
-      - uses: actions/upload-artifact@2
+      - uses: actions/upload-artifact@v7
         with:
           name: manifest_file_for_${{ steps.manifest_version.outputs.manifest_version }}
           path: .ci/Manifest.${{ steps.manifest_version.outputs.manifest_version }}.toml
