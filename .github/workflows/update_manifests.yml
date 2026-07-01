@@ -40,7 +40,7 @@ jobs:
               echo "The manifest file does not exist, so I will create a new manifest from scratch."
           fi
       - name: Cache artifacts
-        uses: actions/cache@v3
+        uses: actions/cache@v6
         env:
           cache-name: cache-artifacts
         with:
